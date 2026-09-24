@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -235,6 +236,50 @@
         .highlight span {
             font-size: 13px;
             color: #607577;
+        }
+
+        /* ================= DIMENSIONES ================= */
+
+        .dimensions-title {
+            text-align: center;
+            color: #075e67;
+            font-size: clamp(25px, 4vw, 34px);
+            margin: 15px 0 20px;
+        }
+
+        .dimensions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 0 0 45px;
+        }
+
+        .dimension {
+            background: white;
+            border: 1px solid #dceeed;
+            border-radius: 18px;
+            padding: 25px 18px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            transition: 0.2s;
+        }
+
+        .dimension:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+        }
+
+        .dimension strong {
+            display: block;
+            color: #087f8c;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .dimension span {
+            color: #607577;
+            font-size: 14px;
+            line-height: 1.5;
         }
 
         /* ================= REALIDAD AUMENTADA ================= */
@@ -598,6 +643,10 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .dimensions {
+                grid-template-columns: 1fr;
+            }
+
             .life-cycle {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -837,6 +886,63 @@
 
                 <span>
                     Tortuga marina
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= DIMENSIONES ================= -->
+
+        <h2 class="dimensions-title">
+            El tamaño de una gigante del océano
+        </h2>
+
+
+        <div class="dimensions">
+
+            <div class="dimension">
+
+                <strong>
+                    Longitud del caparazón
+                </strong>
+
+                <span>
+                    Entre 90 cm y 1,2 metros,
+                    aunque algunos ejemplares
+                    excepcionalmente grandes pueden
+                    alcanzar hasta 1,5 o 1,6 metros.
+                </span>
+
+            </div>
+
+
+            <div class="dimension">
+
+                <strong>
+                    Peso
+                </strong>
+
+                <span>
+                    Entre 110 y 200 kg en la madurez,
+                    aunque se han registrado ejemplares
+                    excepcionales de hasta 395 kg.
+                </span>
+
+            </div>
+
+
+            <div class="dimension">
+
+                <strong>
+                    Ancho del caparazón
+                </strong>
+
+                <span>
+                    Entre 70 y 92 centímetros,
+                    dependiendo del tamaño
+                    del ejemplar.
                 </span>
 
             </div>
@@ -1462,3 +1568,5 @@
 </body>
 
 </html>
+```
+
